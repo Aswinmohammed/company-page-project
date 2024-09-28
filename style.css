@@ -1,0 +1,606 @@
+body{
+    font-family: "Open Sans", sans-serif;
+}
+/* Nav-Bar code  */
+header{
+    color: #f3f3f5;
+    width: 100%;
+    background-size: cover;    
+    background-position: center;
+    background: linear-gradient(rgba(55, 55, 92, 0.8),rgba(55, 55, 92, 0.8)),url('home-bg.jpg');
+    padding-bottom: 100px;
+}
+
+.nav-wrapper{
+    display: flex;
+    padding-left: 100px;
+}
+
+.mobile-nav{
+    display: none;
+}
+
+.nav-wrapper .logo{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 25px;
+    color: #f3f3f5;
+}
+
+.nav-wrapper li{
+    list-style: none;
+    display: inline-block;
+    margin-top: 35px;
+    margin-left: 35px;
+}
+
+.nav-wrapper a{
+    text-decoration: none;
+    padding-left: 15px;
+    color: #f3f3f5;
+}
+
+.nav-wrapper .nav-contact{
+    font-size: 16px;
+    margin-left: 180px;
+    margin-top: 35px;
+    color: #f3f3f5;
+}
+
+/* Input tag section */
+.input-wrapper{
+    text-align: center;
+    margin-top: 15%;
+}
+
+.input-wrapper p{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.input-wrapper h6{
+    font-size: 2.5rem;
+    font-weight: 100;
+}
+
+.input-bar{
+   margin: 30px;
+   position: relative;
+}
+
+#first_input{
+  margin-right: 20px;  
+  padding: 10px 30px;
+  border-radius: 20px;
+  border: none;
+  width: 300px;
+}
+
+button {
+    border-radius: 20px;
+    padding: 5px 40px;
+    background-color: #3d8535; 
+    color: white;
+    border: none;
+    position: absolute;
+    left: 55%;
+  }
+
+.input-bar p{
+    text-transform: capitalize;
+    font-size: 13px;
+    font-weight: 100;
+    margin-top: 5px;
+} 
+
+/* meadia quary for header section */
+@media (max-width:480px){
+
+    .mobile-nav{
+        display:flex;
+    }
+
+    .mobile-nav .logo{
+        display: inline-block;
+        text-decoration: none;
+        font-size: 2.2rem;
+        font-weight: 500;
+        margin-top: 25px;
+        margin-left: 15px;
+        color:rgba(55, 55, 92, 0.8);
+    }
+    
+    .mobile-nav i{
+        color: #3d8535;
+        margin-top: 40px;
+        font-size:25px ;
+        margin-left: 30%;
+    }
+
+    .nav-bar{
+        display: none;
+    }
+
+    .input-wrapper{
+        margin: 1rem 2rem;
+    }
+
+    .input-wrapper  p{
+        padding-top: 150px;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .input-wrapper h6{
+        font-size: 3.4rem;
+    }
+
+    button{
+        position: static;
+        margin-top: 20px;
+        width: 300px;
+        margin-right: 20px;  
+     }
+
+    .input-bar  p {
+        padding-top: 0px;
+        font-size: 18px;
+        margin: 5px 0px;
+    }  
+
+    
+    
+ } 
+ 
+/* Main section */
+.what-you-get{
+    display: flex;
+    margin: 6.5rem 4rem;
+    justify-content: center;
+}
+
+.text-wrapper{
+    width: 52%;
+    color: #7d7f78;
+}
+
+.text-wrapper h3{
+    color: #4f524f;
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.mini-nav{
+    padding:0px 0px;
+    margin: 35px 0px;
+}
+
+.text-wrapper ul{
+    padding: 0% 0%;
+    list-style: none;
+}
+
+#active-nav{
+    text-decoration: underline;
+    text-decoration-color: #2ecc71;
+    text-underline-offset: 14px;
+    text-decoration-thickness: 2px;
+}
+.text-wrapper a{
+    font-size: 15px;
+    text-decoration: none;
+    padding-right: 10px;
+    color:#7d7f78 ;
+}
+
+.text-wrapper li{
+    display: inline-block;
+    text-align: start;
+}
+
+.text-wrapper h4{
+    color: #35353b;
+    font-size: 1.8rem;
+    font-weight: 100;
+}
+
+.text-wrapper p{
+    font-size: 14px;
+    margin: 10px 0px;
+}
+
+.image-wrapper{
+    width: 45%;
+}
+
+/* meadia quary what your get section */
+@media (max-width:480px){
+
+    .what-you-get{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 2rem 2rem;
+    }
+
+    .text-wrapper{
+        width: 100%;
+    }
+
+    .image-wrapper{
+        width: 100%;
+    }
+}
+
+/* Middle Main */
+.middle-main{
+    background-color: #f9f9f9;
+}
+
+.professional-wrapper{
+    text-align: center;
+}
+
+.professional-wrapper h2{
+    padding:100px 0px;
+    font-size: 2.4rem;
+    font-weight: 100;
+    color: #3d3f3d;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 75px;
+}
+
+.card-wrapper1{
+    width: 30%;
+    height:700px;
+}
+
+.card-wrapper1 .profile{
+    width: 100%;
+    height: 60%;
+    background-image: url(team-image1.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+#triangle1{
+    position: relative;
+    width: 45px;
+    left: 190px;
+    top: 393px;
+}
+
+.card-wrapper1 .para-wrapper{
+    background-color:white;
+    color: #757575;
+    width: 100%;
+    height: 35%;
+    padding: 30px 0px 0px 35px;
+    text-align: left;
+}
+
+.para-wrapper h2{
+    padding: 0px;
+    font-size:2rem;
+    padding-bottom: 10px;
+    font-weight: 100;
+}
+
+.para-wrapper h5{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #3d3f3d;
+    padding-bottom: 10px;
+}
+
+.para-wrapper p{
+    padding-bottom: 10px;
+}
+
+.card-wrapper2{
+    width: 30%;
+    height:700px;
+}
+
+.card-wrapper2 .profile{
+    width: 100%;
+    height: 60%;
+    background-image: url(team-image2.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+.card-wrapper2 .para-wrapper{
+    background-color:white;
+    color: #757575;
+    width: 100%;
+    height: 35%;
+    padding: 30px 0px 0px 35px;
+    text-align: left;
+}
+
+#triangle2{
+    position: relative;
+    width: 45px;
+    left: 175px;
+    top: 30px;
+}
+
+.card-wrapper3{
+    width: 30%;
+    height:700px;
+}
+
+.card-wrapper3 .profile{
+    width: 100%;
+    height: 60%;
+    background-image: url(team-image3.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+.card-wrapper3 .para-wrapper{
+    background-color:white;
+    color: #757575;
+    width: 100%;
+    height: 35%;
+    padding: 30px 0px 0px 35px;
+    text-align: left;
+}
+
+#triangle3{
+    position: relative;
+    width: 45px;
+    left: 190px;
+    top: 393px;
+}
+
+/* meadia quary for profile card section */
+@media (max-width:480px){
+
+    .professional-wrapper h2{
+        font-size: 2.8rem;
+        padding:50px 0px;
+    }
+
+    .card-container{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+
+    .card-wrapper1{
+        width: 100%;
+    }
+
+    #triangle1{
+        position: relative;
+        left: 175px;
+        top: 400px;
+    }
+    
+
+    .card-wrapper2{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #triangle2{
+        display: none;
+    }
+
+    .card-wrapper3{
+        width: 100%;
+    }
+
+    #triangle3{
+        position: relative;
+        left: 175px;
+        top: 400px;
+    }
+}
+
+/* Plan section */
+
+.plans-wrapper h1{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: lighter;
+    color: #333333;
+    padding: 100px 0px 50px 0px;
+}
+
+.plans-card{
+    display: flex;
+    height: 480px;
+    justify-content: center;
+    flex-direction: row;
+    padding-bottom: 100px;
+}
+
+.Student-plan{
+    width: 30%;
+    background-color:#ffffff;
+    margin: 0px 2px;
+    padding-left: 50px;
+}
+
+.Business-plan{
+    width: 30%;
+    background-color: #ffffff;
+    margin: 0px 2px;
+    padding-left: 50px;
+}
+
+.Professional-plan{
+    width: 30%;
+    background-color: #ffffff;
+    margin: 0px 2px;
+    padding-left: 50px;
+}
+
+.plans-card h3{
+    font-size: 1.8rem;
+    font-weight: lighter;
+    padding: 30px 0px 0px 0px;
+}
+
+.plans-card hr{
+    width: 80%;
+    margin: 15px 0px ;
+    border: none;
+    border-bottom: 3px solid #f9f9f9;
+    background-color: transparent;
+}
+
+.plans-card p {
+    line-height: 2.2;
+    color:#404144;
+}
+
+.plans-card span{
+    color: #333333;
+    font-size: 1.2rem;
+    padding-bottom: 50px;
+}
+
+.plans-card a {
+    text-decoration: none;
+    background-color: #29ca8e;
+    border-radius: 25px;
+    color: #ffffff;
+    padding: 12px 30px;
+    margin-left: 45px;
+}
+
+/* meadia quary for plans section */
+@media (max-width:480px){
+    .plans-wrapper h1{
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+
+    .plans-card{
+        display: flex;
+        height: 1100px;
+        justify-content: center;
+        flex-direction: column;
+        padding-bottom: 100px;
+    }
+
+    .Student-plan{
+        width: 100%;
+        margin: 10px 2px;
+        padding:0px 0px 25px 50px;
+    }
+    
+    .Business-plan{
+        width: 100%;
+        margin: 10px 2px;
+        padding:0px 0px 25px 50px;
+    }
+    
+    .Professional-plan{
+        width: 100%;
+        margin: 10px 2px;
+        padding:0px 0px 25px 50px;
+    }
+
+}
+
+/* footer section */
+
+footer{
+    text-align: center;
+    margin: 3rem  5rem ;
+}
+
+footer h2{
+    font-size: 2.5rem;
+    font-weight: lighter;
+    padding-bottom: 3rem;
+}
+
+ ::placeholder{
+    font-size: 15px;
+}
+
+.input-container input,textarea{
+    border: none;
+    padding: 15px;
+    border-bottom: 3px solid #f0f0f0;
+    width: 300px;
+    margin-right: 35px;
+    margin-bottom: 15px;
+}
+
+textarea{
+    width: 70%;
+}
+
+.input-container a {
+   text-decoration: none;
+   font-size: 14px;
+   color: #f9f9f9;
+   background-color: black;
+   padding: 15px 80px ;
+   border-radius: 25px;
+}
+
+.copyright-area{
+    color: #757575;
+    display: flex;
+    margin: 75px 130px;
+}
+
+.icon-wrapper {
+    color: #000;
+    margin-left: 25%;
+}
+
+.icon-wrapper i{
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+/* meadia quary for plans section */
+@media (max-width:480px){
+    footer{
+        text-align: center;
+        margin: 3rem  3rem ;
+    }
+
+    #email{
+        margin-bottom: 25px;
+    }
+
+    textarea{
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    
+
+    .input-container a{
+       margin-top: 20px;
+    }
+
+    .copyright-area{
+        display: flex;
+        flex-direction: column;
+        margin: 75px 0px;
+    }
+
+    .icon-wrapper {
+        margin: 15% 10% 0% 0%;
+    }
+}
